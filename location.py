@@ -9,10 +9,7 @@ class Location:
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
     def __eq__(self, other: object) -> bool:
-        if isinstance(self, Location[str, float, float]):
             return self.name == other.name and self.lat == other.lat and self.lon == other.lon
-        else:
-            raise ValueError
 
     def __repr__(self) -> str:
         return ("Location('" + self.name + "', " + str(self.lat) + ', ' + str(self.lon) + ')')
