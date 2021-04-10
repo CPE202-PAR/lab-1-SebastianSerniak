@@ -87,5 +87,6 @@ def reverse_list_mutate(int_list: Optional[List]) -> None:
             l -= 2
 
       return None
+
    else:
       raise ValueError
