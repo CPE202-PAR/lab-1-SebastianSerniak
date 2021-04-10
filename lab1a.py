@@ -62,9 +62,9 @@ def reverse_list_mutate(int_list: Optional[List]) -> None:
       a = 0
       if l % 2 == 0:
          mid = int(l - ((l/2) - 1))
-         if a == mid:
-            a += 2
-            l -= 2
+         #if a == mid:
+            #a += 2
+            #l -= 2
          while l > a:
             b = z[a]
             x = z[l]

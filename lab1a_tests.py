@@ -16,7 +16,7 @@ class TestLab1(unittest.TestCase):
             max_list_iter(tlist)
 
     def test_max_list_03(self) -> None:
-        tlist = []
+        tlist: List[int] = []
         self.assertEqual(max_list_iter(tlist), None)    # used to check for empty list
 
     def test_reverse_01(self) -> None:
