@@ -8,11 +8,11 @@ class Location:
         self.lon = lon      # longitude in degrees (-180.0 to 180.0)
 
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         return self.name == other.name \
                and self.lat == other.lat and self.lon == other.lon
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return ("Location('" + self.name + "', " + str(self.lat) + ', ' + str(self.lon) + ')')
 
 def main() -> None:                 # pragma: no cover
